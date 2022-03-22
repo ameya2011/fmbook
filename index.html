@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title>Family Book</title>
+<link rel="stylesheet" href="style.css">
+</title>
+</head>
+
+<body background="Untitled design (36).png">
+<center>
+<h1>My Family Book</h1>
+<img src="" style="width: 280px; height: 350px;" id="FmImg">
+<h4 id="FmName"></h4>
+<button id="NextButton" onclick="update();">Next</button>
+</center>
+
+<script>
+var images=[
+"Ameyavikrama Rathi (me).jpg",
+"Ameyavikrama Rathi (me).png",
+"Ameyavikrama Rathi (me) (1).png",
+"Ameyavikrama Rathi (me) (2).png"
+];
+
+
+
+var i=0;
+
+function update(){
+i++
+
+var number_of_fm_in_array=4
+if(i>number_of_fm_in_array){
+i=0;
+}
+var updatedimage= images[i];
+document.getElementById("FmImg").src= updatedimage;
+}
+</script>
+</body>
+
+</html>
